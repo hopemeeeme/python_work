@@ -52,6 +52,7 @@ with open(csvpath, newline='') as csvfile:
    print(output)
    
    #store to text file
-with open('output') as textfile:
-    textfile.write(output)
+file_to_open = "../election_results"
+with open(file_to_open,"w") as text_file:
+    text_file.write(output)
 

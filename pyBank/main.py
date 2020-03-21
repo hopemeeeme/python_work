@@ -52,8 +52,9 @@ output = (
 print(output)
 
 #store to text file
-with open('output') as text:
-    text.write(output)
+file_to_open = "../analysis"
+with open(file_to_open,"w") as text_file:
+    text_file.write(output)
 
 
 
